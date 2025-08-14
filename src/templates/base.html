@@ -3,15 +3,14 @@
 <head>
 
     <title>{% block head_title %}SaaS{% endblock head_title %}</title>
-
+    {% include 'base/css.html' %}
 </head>
 <body>
-
+    {% include 'nav/nav_bar.html' %}
     {% block content %}
-replace me
-
     {% endblock content %}
 
+    {% include 'base/css.html' %}
 </body>
 
 </html>
