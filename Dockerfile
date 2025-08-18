@@ -52,7 +52,7 @@ ENV DJANGO_DEBUG=${DJANGO_DEBUG}
 # database isn't available during build
 # run any other commands that do not need the database
 # such as:
-RUN python management.py vendor_pull
+RUN python manage.py vendor_pull
 RUN python manage.py collectstatic --noinput
 #white-noise  -> s3
 
